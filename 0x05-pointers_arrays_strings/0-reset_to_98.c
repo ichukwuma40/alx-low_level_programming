@@ -1,12 +1,13 @@
 #include "main.h"
 
 /**
- * 0-reset_to_98.c -updates an integer value to 98
- * @n: A pointer to an int that will be updated
+ * reset_to_98 - update address function
+ * @n: integer
  *
- * Return: void that means is correct.
+ * Return: nothing
  */
- void 0-reset_to_98(int *n)
+
+void reset_to_98(int *n)
 {
- *n = 98;
+	*n = 98;
 }
