@@ -1,11 +1,20 @@
- # 0x07. C - Recursion
+ # 0x08. C - Recursion
   <hr>
   <b>About </b>
  <hr>
  An introductory project on:<p>
 
   • recursion, and how to use it
+    
+       <hr>
+ #@General##
 
+    <hr>
+* What is recursion <br>
+* How to implement recursion <br>
+* In what situations you should implement recursion <br>
+* In what situations you shouldn’t implement recursion <br> <p>
+   <hr>
  Requirements
  <hr> 
  • Ubuntu 14.04 <br> <p>
