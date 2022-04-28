@@ -5,10 +5,9 @@
  An introductory project on:<p>
 
   • recursion, and how to use it
-       <hr>
- <b>General<b/>
-
-    <hr>
+  
+  <b>General </b>
+ <hr>
 * What is recursion <br>
 * How to implement recursion <br>
 * In what situations you should implement recursion <br>
@@ -20,4 +19,4 @@
  • gcc 4.8.4 <br>
  • no standard library functions <br>
  • no loops of any kind <br>
- • allowed to use _putchar <br>  <p>
+ • allowed to use _putchar
