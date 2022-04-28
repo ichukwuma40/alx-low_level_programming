@@ -5,9 +5,8 @@
  An introductory project on:<p>
 
   • recursion, and how to use it
-    
        <hr>
- #@General##
+ <b>General<b/>
 
     <hr>
 * What is recursion <br>
