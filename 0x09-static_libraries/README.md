@@ -8,7 +8,7 @@
   • C static libraries <p>
    
   <hr>
-  Resources
+  Resources <br>
   
   man or help: <br>
 
