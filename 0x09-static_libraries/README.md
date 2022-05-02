@@ -1,7 +1,7 @@
  0x09. C - Static libraries
 
  <hr>
-  <bold> Concepts </bold> <p>
+  <bold>Concept </bold> <p>
  
  For this project, students are expected to look at this concept:
 
@@ -10,14 +10,14 @@
   <hr>
   Resources
   
- <bold> man or help: </bold> <p>
+  man or help: <br>
 
- • ar
- • ranlib
- • nm
+ • ar <br>
+ • ranlib <br>
+ • nm <br>
  
- <bold> General </bold> <p>
+ <bold>General</bold><p>
 
- • What is a static library, how does it work, how to create one, and how to use it
+ • What is a static library, how does it work, how to create one, and how to use it <br>
  • Basic usage of ar, ranlib, nm
 
