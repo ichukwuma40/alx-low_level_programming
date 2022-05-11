@@ -1,17 +1,6 @@
-#include <stdio.h>
-#include "4-sum.h"
-#include "4-sum.h"
+#ifndef _SUM_LIKE_MACRO_
+#define _SUM_LIKE_MACRO_
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    int s;
+#define SUM(x, y) ((x) + (y))
 
-    s = SUM(98, 1024);
-    printf("%d\n", s);
-    return (0);
-}
+#endif
