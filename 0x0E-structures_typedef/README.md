@@ -1,0 +1,2 @@
+ <b> THIS IS ALL ABOUT STRUCTURE_TYPEDEF</b>
+ <hr>
