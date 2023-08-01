@@ -14,17 +14,17 @@ listint_t *reverse_listint(listint_t **head)
 	if (!(*head))
 		return (NULL);
 
-	next_node = (*head)->next;
 	what_to_point_to = NULL;
-	iwhat_to_point_to = *head;
+	next_node = (*head)->next;
 	(*head)->next = what_to_point_to;
+	what_to_point_to = *head;
 
-while (next_node)
+	while (next_node)
 	{
-next_node = (*head)->next;
 		*head = next_node;
-		what_to_point_to = *head;
+		next_node = (*head)->next;
 		(*head)->next = what_to_point_to;
+		what_to_point_to = *head;
 	}
 
 	return (*head);
