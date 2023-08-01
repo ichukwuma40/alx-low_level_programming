@@ -1,62 +1,62 @@
-#include "lists.h"
 #include <stdio.h>
+#include "lists.h"
 
-size_t looped_listint_len(const listint_t *head);
 size_t print_listint_safe(const listint_t *head);
+size_t looped_listint_len(const listint_t *head);
 
 /**
- * looped_listint_len - Counts the number of unique nodes
- *                      in a looped listint_t linked list.
- * @head: A pointer to the head of the listint_t to check.
+ * looped_listint_len - This Count the number of unique nodes in the list
+ * inside a loop listint_t of a linked list.
+ * @head: This is a pointer to the head of the listint_t to be checked on the node.
  *
- * Return: If the list is not looped - 0.
- *         Otherwise - the number of unique nodes in the list.
+ * Return: It returns - 0 if the list is not looped.
+ *         Otherwise - The no of the unique nodes in the list.
  */
 size_t looped_listint_len(const listint_t *head)
 {
-	const listint_t *tortoise, *hare;
 	size_t nodes = 1;
+	const listint_t *obi, *ada;
 
 	if (head == NULL || head->next == NULL)
 		return (0);
 
-	tortoise = head->next;
-	hare = (head->next)->next;
+	ada = (head->next)->next;
+	obi = head->next;
 
-	while (hare)
+	while (ada)
 	{
-		if (tortoise == hare)
+		if (obi == ada)
 		{
-			tortoise = head;
-			while (tortoise != hare)
+			obi = head;
+			while (obi != ada)
 			{
 				nodes++;
-				tortoise = tortoise->next;
-				hare = hare->next;
+				obi = obi->next;
+				ada = ada->next;
 			}
 
-			tortoise = tortoise->next;
-			while (tortoise != hare)
+			obi = obi->next;
+			while (obi != ada)
 			{
 				nodes++;
-				tortoise = tortoise->next;
+				obi = obi->next;
 			}
 
 			return (nodes);
 		}
 
-		tortoise = tortoise->next;
-		hare = (hare->next)->next;
+		obi = obi->next;
+		ada = (ada->next)->next;
 	}
 
 	return (0);
 }
 
 /**
- * print_listint_safe - Prints a listint_t list safely.
- * @head: A pointer to the head of the listint_t list.
+ * print_listint_safe - The print a listint_t list safely.
+ * @head: This the pointer to the head of the listint_t list.
  *
- * Return: The number of nodes in the list.
+ * Return: This is the number of nodes in the list.
  */
 size_t print_listint_safe(const listint_t *head)
 {
