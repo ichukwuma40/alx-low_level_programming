@@ -1,20 +1,21 @@
 #include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  *find_common_node - finds a common node in a looped linked list
- *@hare:faster incrementing pointer
- *@tortoise:slower pointer
+ *@run:faster incrementing pointer
+ *@walk:slower pointer
  *Return:address to common node,NULL otherwise
  */
-listint_t *find_common_node(listint_t *hare, listint_t *tortoise)
+listint_t *find_common_node(listint_t *run, listint_t *walk)
 {
-	while (hare && tortoise && hare->next)
+	while (run && walk && walk->next)
 	{
-		hare = hare->next->next;
-		tortoise = tortoise->next;
-		if (hare == tortoise)
-			return (tortoise);
+		run = run->next->next;
+		walk = walk->next;
+		if (run == walk)
+			return (walk);
 	}
 	return (NULL);
 }
@@ -26,16 +27,16 @@ listint_t *find_common_node(listint_t *hare, listint_t *tortoise)
  */
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *hare = head, *tortoise = head;
+	listint_t *run = head, *walk = head;
 
-	tortoise = find_common_node(hare, tortoise);
-	if (tortoise == NULL)
+	walk = find_common_node(run, walk);
+	if (walk == NULL)
 		return (NULL);
-	hare = head;
-	while (hare != tortoise)
+	run = head;
+	while (run != walk)
 	{
-		hare = hare->next;
-		tortoise = tortoise->next;
+		run = run->next;
+		walk = walk->next;
 	}
-	return (hare);
+	return (run);
 }
