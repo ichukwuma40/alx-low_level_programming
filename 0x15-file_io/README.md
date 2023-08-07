@@ -8,5 +8,5 @@
 <hr>
 <br> 3. Copy
 <hr>
-<br> The Executable and Linkable Format. This Writes a program that displays the information contained in the ELF header at the start of an ELF file.
-<hr
+<br> 4. ELF: The Executable and Linkable Format. This Writes a program that displays the information contained in the ELF header at the start of an ELF file.
+<hr>
